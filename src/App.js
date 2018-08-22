@@ -28,7 +28,7 @@ const App = () => (
                         <img src={logo} className="App-logo" alt="logo"/>
                     </Link>
                 </header>
-                <ToggleContainer/>
+
                 <Switch>
                     <Route
                         exact
