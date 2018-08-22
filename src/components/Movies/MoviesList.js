@@ -2,7 +2,7 @@
 import React, {PureComponent} from 'react';
 import styled from 'styled-components';
 import Movie from './Movie';
-
+import PropTypes from 'prop-types';
 class MoviesList extends PureComponent {
 
     constructor(props)
@@ -10,19 +10,20 @@ class MoviesList extends PureComponent {
         super(props);
 
         this.state = {
-            movies: []
+            movies: props.movies
         }
     }
 
-    componentWillMount = () => {
-        this
-            .props
-            .getMovies();
+    componentDidMount = () => {
+
+        const {isLoaded, getMovies} = this.props;
+        if (!isLoaded) {
+            getMovies();
+        }
     }
 
     componentWillReceiveProps = props => {
         this.setState({movies: props.movies})
-
     }
 
     render() {
@@ -45,3 +46,10 @@ const MovieGrid = styled.div `
   grid-template-columns: repeat(6, 1fr);
   grid-row-gap: 1rem;
 `;
+
+MoviesList.propTypes = {
+
+    movies: PropTypes.array.isRequired,
+    getMovies: PropTypes.func.isRequired
+
+}

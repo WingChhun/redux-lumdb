@@ -1,7 +1,8 @@
 import {GET_MOVIES} from "./constants";
 
 const defaultState = {
-    movies: []
+    movies: [],
+    moviesLoaded: false
 }
 export default function (prevState = defaultState, action) {
 
@@ -14,7 +15,8 @@ export default function (prevState = defaultState, action) {
             return {
 
                 ...prevState,
-                movies: payload
+                movies: payload,
+                moviesLoaded: true
             }
 
         default:

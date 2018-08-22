@@ -7,7 +7,7 @@ const mapStateToProps = (prevState, ownProps) => {
 
     const movies = prevState.movies.movies;
 
-    return {movies: movies}
+    return {movies: movies, isLoaded: prevState.movies.moviesLoaded}
 
 }
 
