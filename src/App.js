@@ -10,9 +10,9 @@ import './App.css';
 import MoviesList from './MoviesList';
 import MovieDetail from './MovieDetail';
 
-const defaultState = () => ({welcome: "starter"});
+import rootReducer from "./rootReducer";
 
-const store = createStore(defaultState);
+const store = createStore(rootReducer);
 
 const App = () => (
     <Provider store ={store}>
