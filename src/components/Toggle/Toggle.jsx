@@ -21,7 +21,7 @@ class Toggle extends Component
     {
 
         const {messageVisibility} = this.state;
-        const {toggleMessage} = this.props;
+        const {toggleMessage, getMovies} = this.props;
 
         return (
 
@@ -30,7 +30,8 @@ class Toggle extends Component
                 {messageVisibility && <p>Action toggled</p>}
 
                 <button id="btn" onClick ={toggleMessage}>Toggle Me</button>
-
+                <button onClick={getMovies}>
+                    Load Movies</button>
             </div>
         )
     }

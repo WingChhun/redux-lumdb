@@ -1,7 +1,7 @@
 import {connect} from 'react-redux';
 import Toggle from "./Toggle";
 import {TOGGLE_MESSAGE} from './constants.js'
-import {toggleMessage} from "./actions";
+import {toggleMessage, getMovies} from "./actions";
 import {bindActionCreators} from 'redux';
 
 const mapStateToProps = (prevState) => {
@@ -10,7 +10,8 @@ const mapStateToProps = (prevState) => {
 }
 
 const mapDispatchToProps = (dispatch, ownProps) => bindActionCreators({
-    toggleMessage: toggleMessage
+    toggleMessage: toggleMessage,
+    getMovies: getMovies
 }, dispatch)
 
 export default connect(mapStateToProps, mapDispatchToProps)(Toggle);
