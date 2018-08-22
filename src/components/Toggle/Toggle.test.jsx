@@ -11,7 +11,7 @@ describe("Toggle", () => {
     const props = {
 
         messageVisibility: false,
-        toggleVisibility: jest.fn()
+        toggleMessage: jest.fn()
 
     }
 
@@ -35,16 +35,9 @@ describe("Toggle", () => {
 
     })
 
-    // it("Should call messageVisibility on CLick", () => {
-
-    //     const wrapper = shallow(<Toggle {...props}/>);
-
-    //     const bvtton = wrapper.find("#btn");
-
-    //     button.simulate("click");
-
-    //     expect(props.toggleVisibility).toHaveBeenCalled();
-
-    // })
+    // it("Should call messageVisibility on CLick", () => {     const wrapper =
+    // shallow(<Toggle {...props}/>);     const bvtton = wrapper.find("#btn");
+    // button.simulate("click");
+    // expect(props.toggleVisibility).toHaveBeenCalled(); })
 
 });
