@@ -5,7 +5,9 @@ import MoviesList from "./MoviesList";
 
 const mapStateToProps = (prevState, ownProps) => {
 
-    return {movies: prevState.movies.movies}
+    const movies = prevState.movies.movies;
+
+    return {movies: movies}
 
 }
 

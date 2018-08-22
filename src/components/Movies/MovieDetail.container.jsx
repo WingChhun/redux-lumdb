@@ -3,8 +3,8 @@ import {bindActionCreators} from 'redux';
 
 import MovieDetail from "./MovieDetail";
 
-const mapStateToProps = (prevState, ownProps) => {}
+const mapStateToProps = (prevState, ownProps) => ({})
 
-const mapDispatchToProps = (dispatch, ownProps) => {}
+const mapDispatchToProps = (dispatch, ownProps) => ({})
 
 export default connect(mapStateToProps, mapDispatchToProps)(MovieDetail);

@@ -2,9 +2,9 @@ import thunk from 'redux-thunk';
 import {GET_MOVIES} from "./constants.js";
 
 //TODO: Redux thunk allows us to returna  function
-export const getMovies = () => {
+//TODO: Return async function
 
-    //TODO: Return async function
+export const getMovies = () => {
 
     return async function (dispatch) {
 
