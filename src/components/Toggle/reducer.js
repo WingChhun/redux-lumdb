@@ -1,7 +1,7 @@
-import {TOGGLE_MESSAGE, GET_MOVIES} from "./constants";
+import {TOGGLE_MESSAGE} from "./constants";
 const defaultState = {
-    messageVisibility: false,
-    movies: []
+    messageVisibility: false
+
 };
 
 //TODO: Export a default reducer
@@ -15,13 +15,6 @@ export default function (prevState = defaultState, action) {
             return {
                 ...prevState,
                 messageVisibility: !prevState.messageVisibility
-            }
-
-        case GET_MOVIES:
-
-            return {
-                ...prevState,
-                movies: payload
             }
 
         default:

@@ -9,8 +9,8 @@ import logo from './logo.svg';
 import './App.css';
 
 import thunk from 'redux-thunk';
-import MoviesList from './MoviesList';
-import MovieDetail from './MovieDetail';
+import MoviesListContainer from './components/Movies/MoviesList.container.jsx';
+import MovieDetailContainer from './components/Movies/MovieDetail.container.jsx';
 import ToggleContainer from "./components/Toggle/Toggle.container";
 import rootReducer from "./rootReducer";
 
@@ -30,8 +30,8 @@ const App = () => (
                 </header>
                 <ToggleContainer/>
                 <Switch>
-                    <Route exact path="/" component={MoviesList}/>
-                    <Route path="/:id" component={MovieDetail}/>
+                    <Route exact path="/" component={MoviesListContainer}/>
+                    <Route path="/:id" component={MovieDetailContainer}/>
                 </Switch>
             </div>
         </Router>

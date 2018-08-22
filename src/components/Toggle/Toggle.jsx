@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {connect} from 'react-redux'
+import {connect} from 'react-redux';
 import PropTypes from 'prop-types';
 class Toggle extends Component
 {
@@ -30,8 +30,7 @@ class Toggle extends Component
                 {messageVisibility && <p>Action toggled</p>}
 
                 <button id="btn" onClick ={toggleMessage}>Toggle Me</button>
-                <button onClick={getMovies}>
-                    Load Movies</button>
+
             </div>
         )
     }
@@ -43,12 +42,6 @@ export default Toggle;
 Toggle.propTypes = {
 
     messageVisibility: PropTypes.bool.isRequired,
-    toggleMessage: PropTypes.func.isRequired,
-    getMovies: PropTypes.func.isRequired
+    toggleMessage: PropTypes.func.isRequired
 
-}
-
-Toggle.defaultProps = {
-
-    messageVisibility: false
 }
