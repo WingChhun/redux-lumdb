@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux'
-import {TOGGLE_MESSAGE} from './constants.js'
 
 class Toggle extends Component
 {
@@ -22,6 +21,7 @@ class Toggle extends Component
     {
 
         const {messageVisibility} = this.state;
+        const {toggleMessage} = this.props;
 
         return (
 
@@ -29,7 +29,7 @@ class Toggle extends Component
 
                 {messageVisibility && <p>Action toggled</p>}
 
-                <button id="btn" onClick ={this.props.toggleMessage}>Toggle Me</button>
+                <button id="btn" onClick ={toggleMessage}>Toggle Me</button>
 
             </div>
         )
