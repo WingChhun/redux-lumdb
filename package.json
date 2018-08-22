@@ -5,6 +5,7 @@
     "dependencies": {
         "enzyme": "^3.4.4",
         "enzyme-adapter-react-16": "^1.2.0",
+        "gh-pages": "^1.2.0",
         "prop-types": "^15.6.2",
         "react": "^16.2.0",
         "react-dom": "^16.2.0",
@@ -23,12 +24,15 @@
         "build": "react-scripts build",
         "test": "react-scripts test --env=jsdom",
         "eject": "react-scripts eject",
-
         "predeploy": "npm run build",
         "deploy": "gh-pages -d build"
     },
     "jest": {
-        "collectCoverageFrom": ["src/**/*.jsx", "!src/index.js", "!src/App.js"]
+        "collectCoverageFrom": [
+            "src/**/*.jsx",
+            "!src/index.js",
+            "!src/App.js"
+        ]
     },
     "coverage": "node scripts/test.js --env=jsdom --coverage",
     "devDependencies": {

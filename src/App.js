@@ -21,7 +21,7 @@ const store = createStore(rootReducer, load(), composeWithDevTools(applyMiddlewa
 
 const App = () => (
     <Provider store ={store}>
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
             <div className="App">
                 <header className="App-header">
                     <Link to="/">
