@@ -29,7 +29,7 @@ class Toggle extends Component
 
                 {messageVisibility && <p>Action toggled</p>}
 
-                <button onClick ={this.props.toggleVisibility}>Toggle Me</button>
+                <button id="btn" onClick ={this.props.toggleVisibility}>Toggle Me</button>
 
             </div>
         )

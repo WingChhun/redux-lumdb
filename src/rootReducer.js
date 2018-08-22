@@ -1,5 +1,5 @@
 import {combineReducers} from 'redux';
-import message from "./reducer";
+import message from "./components/Toggle/reducer";
 
 const rootReducer = combineReducers({message})
 
