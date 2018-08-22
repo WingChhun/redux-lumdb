@@ -1,7 +1,8 @@
-import {GET_MOVIES} from "./constants";
+import {RESET_MOVIE, GET_MOVIES, GET_MOVIE} from "./constants";
 
 const defaultState = {
     movies: [],
+    movie: {},
     moviesLoaded: false
 }
 export default function (prevState = defaultState, action) {
@@ -19,6 +20,20 @@ export default function (prevState = defaultState, action) {
                 moviesLoaded: true
             }
 
+        case GET_MOVIE:
+            return {
+                ...prevState,
+                movie: payload,
+                moviesLoaded: true
+            }
+
+            //TODO: Clear reset movie to prevent delay
+        case RESET_MOVIE:
+            return {
+                ...prevState,
+                movie: {},
+                moviesLoaded: false
+            }
         default:
             return defaultState;
     }
