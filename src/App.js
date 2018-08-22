@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {BrowserRouter as Router, Route, Switch, Link} from 'react-router-dom';
+import {HashRouter, BrowserRouter as Router, Route, Switch, Link} from 'react-router-dom';
 import {Provider} from 'react-redux';
 import {createStore, applyMiddleware} from 'redux';
 import {composeWithDevTools} from 'redux-devtools-extension';
@@ -21,7 +21,7 @@ const store = createStore(rootReducer, load(), composeWithDevTools(applyMiddlewa
 
 const App = () => (
     <Provider store ={store}>
-        <Router basename={process.env.PUBLIC_URL}>
+        <HashRouter basename={process.env.PUBLIC_URL}>
             <div className="App">
                 <header className="App-header">
                     <Link to="/">
@@ -34,7 +34,7 @@ const App = () => (
                     <Route path="/:id" component={MovieDetailContainer}/>
                 </Switch>
             </div>
-        </Router>
+        </HashRouter>
     </Provider>
 );
 export default App;
