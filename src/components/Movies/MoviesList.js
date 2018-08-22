@@ -16,8 +16,9 @@ class MoviesList extends PureComponent {
 
     componentDidMount = () => {
 
-        const {isLoaded, getMovies} = this.props;
-        if (!isLoaded) {
+        const {isLoaded, getMovies, moviesLoadedAt} = this.props;
+        const oneHour = 60 * 60 * 1000;
+        if (!isLoaded || (new Date() - moviesLoadedAt) > oneHour) {
             getMovies();
         }
     }

@@ -3,7 +3,9 @@ import {RESET_MOVIE, GET_MOVIES, GET_MOVIE} from "./constants";
 const defaultState = {
     movies: [],
     movie: {},
-    moviesLoaded: false
+    moviesLoaded: false,
+    movieLoaded: false,
+    moviesLaodedAt: ''
 }
 export default function (prevState = defaultState, action) {
 
@@ -17,14 +19,16 @@ export default function (prevState = defaultState, action) {
 
                 ...prevState,
                 movies: payload,
-                moviesLoaded: true
+                moviesLoaded: true,
+                moviesLoadedAt: new Date()
             }
 
         case GET_MOVIE:
             return {
                 ...prevState,
                 movie: payload,
-                moviesLoaded: true
+
+                movieLaoded: true
             }
 
             //TODO: Clear reset movie to prevent delay
@@ -32,7 +36,8 @@ export default function (prevState = defaultState, action) {
             return {
                 ...prevState,
                 movie: {},
-                moviesLoaded: false
+                moviesLoaded: false,
+                movieLoaded: false
             }
         default:
             return defaultState;
