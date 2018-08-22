@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux'
-
+import PropTypes from 'prop-types';
 class Toggle extends Component
 {
     constructor(props)
@@ -39,3 +39,16 @@ class Toggle extends Component
 
 //TODO: Connect to Redux
 export default Toggle;
+
+Toggle.propTypes = {
+
+    messageVisibility: PropTypes.bool.isRequired,
+    toggleMessage: PropTypes.func.isRequired,
+    getMovies: PropTypes.func.isRequired
+
+}
+
+Toggle.defaultProps = {
+
+    messageVisibility: false
+}
