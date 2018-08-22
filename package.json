@@ -24,7 +24,7 @@
         "eject": "react-scripts eject"
     },
     "jest": {
-        "collectCoverageFrom": ["src/**/*.jsx", "!src/index.js"]
+        "collectCoverageFrom": ["src/**/*.jsx", "!src/index.js", "!src/App.js"]
     },
     "coverage": "node scripts/test.js --env=jsdom --coverage",
     "devDependencies": {

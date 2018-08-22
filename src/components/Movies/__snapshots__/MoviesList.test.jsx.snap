@@ -1,11 +1,29 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`MoviesList Renders properly 1`] = `
+exports[`MoviesList Renders properly if given movies 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <MoviesList
     getMovies={[Function]}
-    movies={Array []}
+    movies={
+        Array [
+            Object {
+              "id": 1,
+              "poster_path": "hello",
+              "title": "Yo",
+            },
+            Object {
+              "id": 2,
+              "poster_path": "hello",
+              "title": "Yo",
+            },
+            Object {
+              "id": 3,
+              "poster_path": "hello",
+              "title": "Yo",
+            },
+          ]
+    }
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -19,10 +37,84 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
-      "children": Array [],
+      "children": Array [
+        <Movie
+          movie={
+                    Object {
+                              "id": 1,
+                              "poster_path": "hello",
+                              "title": "Yo",
+                            }
+          }
+/>,
+        <Movie
+          movie={
+                    Object {
+                              "id": 2,
+                              "poster_path": "hello",
+                              "title": "Yo",
+                            }
+          }
+/>,
+        <Movie
+          movie={
+                    Object {
+                              "id": 3,
+                              "poster_path": "hello",
+                              "title": "Yo",
+                            }
+          }
+/>,
+      ],
     },
     "ref": null,
-    "rendered": Array [],
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": "1",
+        "nodeType": "function",
+        "props": Object {
+          "movie": Object {
+            "id": 1,
+            "poster_path": "hello",
+            "title": "Yo",
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "2",
+        "nodeType": "function",
+        "props": Object {
+          "movie": Object {
+            "id": 2,
+            "poster_path": "hello",
+            "title": "Yo",
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "3",
+        "nodeType": "function",
+        "props": Object {
+          "movie": Object {
+            "id": 3,
+            "poster_path": "hello",
+            "title": "Yo",
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
     "type": [Function],
   },
   Symbol(enzyme.__nodes__): Array [
@@ -31,10 +123,84 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
-        "children": Array [],
+        "children": Array [
+          <Movie
+            movie={
+                        Object {
+                                    "id": 1,
+                                    "poster_path": "hello",
+                                    "title": "Yo",
+                                  }
+            }
+/>,
+          <Movie
+            movie={
+                        Object {
+                                    "id": 2,
+                                    "poster_path": "hello",
+                                    "title": "Yo",
+                                  }
+            }
+/>,
+          <Movie
+            movie={
+                        Object {
+                                    "id": 3,
+                                    "poster_path": "hello",
+                                    "title": "Yo",
+                                  }
+            }
+/>,
+        ],
       },
       "ref": null,
-      "rendered": Array [],
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": "1",
+          "nodeType": "function",
+          "props": Object {
+            "movie": Object {
+              "id": 1,
+              "poster_path": "hello",
+              "title": "Yo",
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "2",
+          "nodeType": "function",
+          "props": Object {
+            "movie": Object {
+              "id": 2,
+              "poster_path": "hello",
+              "title": "Yo",
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "3",
+          "nodeType": "function",
+          "props": Object {
+            "movie": Object {
+              "id": 3,
+              "poster_path": "hello",
+              "title": "Yo",
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
       "type": [Function],
     },
   ],

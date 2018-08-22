@@ -2,7 +2,7 @@ import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import {getMovie, resetMovie} from "./actions";
 
-import MovieDetail from "./MovieDetail";
+import MovieDetail from "./MovieDetail.jsx";
 
 const mapStateToProps = (prevState, ownProps) => {
     return {movie: prevState.movies.movie, isLoaded: prevState.movies.moviesLoaded}

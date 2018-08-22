@@ -1,7 +1,7 @@
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import {getMovies} from "./actions";
-import MoviesList from "./MoviesList";
+import MoviesList from "./MoviesList.jsx";
 
 const mapStateToProps = (prevState, ownProps) => {
 

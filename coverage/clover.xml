@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1534977850156" clover="3.2.0">
-  <project timestamp="1534977850156" name="All files">
-    <metrics statements="74" coveredstatements="7" conditionals="36" coveredconditionals="2" methods="29" coveredmethods="3" elements="139" coveredelements="12" complexity="0" loc="74" ncloc="74" packages="2" files="7" classes="7">
+<coverage generated="1534979853571" clover="3.2.0">
+  <project timestamp="1534979853571" name="All files">
+    <metrics statements="107" coveredstatements="37" conditionals="46" coveredconditionals="8" methods="41" coveredmethods="13" elements="194" coveredelements="58" complexity="0" loc="107" ncloc="107" packages="2" files="10" classes="10">
       <package name="Movies">
-        <metrics statements="58" coveredstatements="0" conditionals="30" coveredconditionals="0" methods="23" coveredmethods="0"/>
+        <metrics statements="91" coveredstatements="30" conditionals="40" coveredconditionals="6" methods="35" coveredmethods="10"/>
+        <file name="Movie.js" path="E:\Github\GH_Training\redux-lumdb\src\components\Movies\Movie.js">
+          <metrics statements="5" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+          <line num="7" count="2" type="stmt"/>
+          <line num="9" count="2" type="stmt"/>
+          <line num="10" count="0" type="stmt"/>
+          <line num="19" count="2" type="stmt"/>
+          <line num="25" count="2" type="stmt"/>
+        </file>
         <file name="Movie.jsx" path="E:\Github\GH_Training\redux-lumdb\src\components\Movies\Movie.jsx">
           <metrics statements="11" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="2" coveredmethods="0"/>
           <line num="1" count="0" type="stmt"/>
@@ -28,6 +36,25 @@
           <line num="8" count="0" type="stmt"/>
           <line num="10" count="0" type="stmt"/>
           <line num="13" count="0" type="stmt"/>
+        </file>
+        <file name="MovieDetail.js" path="E:\Github\GH_Training\redux-lumdb\src\components\Movies\MovieDetail.js">
+          <metrics statements="16" coveredstatements="14" conditionals="4" coveredconditionals="2" methods="6" coveredmethods="5"/>
+          <line num="7" count="1" type="stmt"/>
+          <line num="8" count="1" type="stmt"/>
+          <line num="14" count="4" type="stmt"/>
+          <line num="15" count="4" type="stmt"/>
+          <line num="22" count="5" type="stmt"/>
+          <line num="24" count="5" type="stmt"/>
+          <line num="29" count="1" type="stmt"/>
+          <line num="33" count="1" type="stmt"/>
+          <line num="35" count="1" type="stmt"/>
+          <line num="39" count="5" type="stmt"/>
+          <line num="40" count="5" type="cond" truecount="1" falsecount="1"/>
+          <line num="41" count="0" type="stmt"/>
+          <line num="42" count="5" type="stmt"/>
+          <line num="68" count="1" type="stmt"/>
+          <line num="71" count="0" type="stmt"/>
+          <line num="75" count="1" type="stmt"/>
         </file>
         <file name="MovieDetail.jsx" path="E:\Github\GH_Training\redux-lumdb\src\components\Movies\MovieDetail.jsx">
           <metrics statements="17" coveredstatements="0" conditionals="8" coveredconditionals="0" methods="8" coveredmethods="0"/>
@@ -60,6 +87,21 @@
           <line num="10" count="0" type="stmt"/>
           <line num="14" count="0" type="stmt"/>
           <line num="16" count="0" type="stmt"/>
+        </file>
+        <file name="MoviesList.js" path="E:\Github\GH_Training\redux-lumdb\src\components\Movies\MoviesList.js">
+          <metrics statements="12" coveredstatements="12" conditionals="6" coveredconditionals="4" methods="5" coveredmethods="5"/>
+          <line num="10" count="2" type="stmt"/>
+          <line num="12" count="2" type="stmt"/>
+          <line num="19" count="2" type="stmt"/>
+          <line num="20" count="2" type="stmt"/>
+          <line num="21" count="2" type="cond" truecount="2" falsecount="2"/>
+          <line num="22" count="2" type="stmt"/>
+          <line num="27" count="1" type="stmt"/>
+          <line num="32" count="3" type="stmt"/>
+          <line num="34" count="3" type="stmt"/>
+          <line num="36" count="7" type="cond" truecount="2" falsecount="0"/>
+          <line num="44" count="1" type="stmt"/>
+          <line num="51" count="1" type="stmt"/>
         </file>
         <file name="MoviesList.jsx" path="E:\Github\GH_Training\redux-lumdb\src\components\Movies\MoviesList.jsx">
           <metrics statements="13" coveredstatements="0" conditionals="10" coveredconditionals="0" methods="7" coveredmethods="0"/>
