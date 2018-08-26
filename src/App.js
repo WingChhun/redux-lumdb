@@ -24,17 +24,14 @@ const App = () => (
         <HashRouter basename={process.env.PUBLIC_URL}>
             <div className="App">
                 <header className="App-header">
-                    <Link to={`${process.env.PUBLIC_URL}/`}>
+                    <Link to={`/`}>
                         <img src={logo} className="App-logo" alt="logo"/>
                     </Link>
                 </header>
 
                 <Switch>
-                    <Route
-                        exact
-                        path={`${process.env.PUBLIC_URL}/`}
-                        component={MoviesListContainer}/>
-                    <Route path={`${process.env.PUBLIC_URL}/:id`} component={MovieDetailContainer}/>
+                    <Route exact path={`/`} component={MoviesListContainer}/>
+                    <Route path={`/:id`} component={MovieDetailContainer}/>
                 </Switch>
             </div>
         </HashRouter>
