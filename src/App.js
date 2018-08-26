@@ -21,7 +21,7 @@ const store = createStore(rootReducer, load(), composeWithDevTools(applyMiddlewa
 
 const App = () => (
     <Provider store ={store}>
-        <HashRouter basename={process.env.PUBLIC_URL}>
+        <Router basename={process.env.PUBLIC_URL}>
             <div className="App">
                 <header className="App-header">
                     <Link to={`/`}>
@@ -34,7 +34,7 @@ const App = () => (
                     <Route path={`/:id`} component={MovieDetailContainer}/>
                 </Switch>
             </div>
-        </HashRouter>
+        </Router>
     </Provider>
 );
 export default App;
