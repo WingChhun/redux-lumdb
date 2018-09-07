@@ -1,29 +1,43 @@
 {
-  "name": "rrfe",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "enzyme": "^3.4.4",
-    "enzyme-adapter-react-16": "^1.2.0",
-    "prop-types": "^15.6.2",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
-    "react-overdrive": "0.0.9",
-    "react-redux": "^5.0.7",
-    "react-router-dom": "^4.2.2",
-    "react-scripts": "1.0.17",
-    "redux": "^3.7.2",
-    "redux-thunk": "^2.3.0",
-    "styled-components": "^3.4.4"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  },
-  "devDependencies": {
-    "redux-devtools-extension": "^2.13.5",
-    "redux-logger": "^3.0.6"
-  }
+    "name": "rrfe",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "enzyme": "^3.4.4",
+        "enzyme-adapter-react-16": "^1.2.0",
+        "gh-pages": "^1.2.0",
+        "prop-types": "^15.6.2",
+        "react": "^16.2.0",
+        "react-dom": "^16.2.0",
+        "react-overdrive": "0.0.9",
+        "react-redux": "^5.0.7",
+        "react-router-dom": "^4.2.2",
+        "react-scripts": "1.0.17",
+        "redux": "^3.7.2",
+        "redux-localstorage-simple": "^2.1.3",
+        "redux-thunk": "^2.3.0",
+        "styled-components": "^3.4.4"
+    },
+    
+    "homepage": "https://WingChhun.github.io/redux-lumdb",
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test --env=jsdom",
+        "eject": "react-scripts eject",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build"
+    },
+    "jest": {
+        "collectCoverageFrom": [
+            "src/**/*.jsx",
+            "!src/index.js",
+            "!src/App.js"
+        ]
+    },
+    "coverage": "node scripts/test.js --env=jsdom --coverage",
+    "devDependencies": {
+        "redux-devtools-extension": "^2.13.5",
+        "redux-logger": "^3.0.6"
+    }
 }
